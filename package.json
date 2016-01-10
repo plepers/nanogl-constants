@@ -1,0 +1,28 @@
+{
+  "name": "nanogl-constants",
+  "version": "0.1.0",
+  "description": "GL contants definition, designed for uglifyjs inline expansion",
+  "main": "constants.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs -m -c warnings=false -b -e -o index.js -- constants.js src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plepers/nanogl-constants.git"
+  },
+  "keywords": [
+    "webgl",
+    "constants",
+    "inline"
+  ],
+  "author": "Pierre Lepers",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/plepers/nanogl-constants/issues"
+  },
+  "homepage": "https://github.com/plepers/nanogl-constants#readme",
+  "devDependencies": {
+    "uglify-js": "^2.6.1"
+  }
+}
